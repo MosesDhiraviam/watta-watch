@@ -4,9 +4,9 @@ const contentData = (props) => {
   //  const [offer, description] = props.contentData;
     return (
         <div className="count-box">
-            <h2>
+            <h3>
                 {props.contentData.offer}
-            </h2>
+            </h3>
             <p>{props.contentData.description}</p>
         </div>
     )

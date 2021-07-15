@@ -35,7 +35,8 @@
     /* padding: 10px; */
     /* border: 1px solid red; */
     color: white;
-    font-size: 10px;
+    font-size: 1em;
+    size: 0.5em;
     /* flex-direction: row; */
     align-items: center;
     text-align: center;

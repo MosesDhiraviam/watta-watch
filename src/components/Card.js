@@ -4,7 +4,7 @@ function Card(props) {
     return(
         <div className="pop_nef">
             <div className="pop_name">
-            <h1>{props.name}</h1>
+            <h4>{props.name}</h4>
             </div>
             <div className="pop_item">
 

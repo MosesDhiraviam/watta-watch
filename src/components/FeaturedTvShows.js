@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Card from './Card';
 import "../assets/css/cardholder.css"
 import Carousel from "react-elastic-carousel";
@@ -17,7 +18,7 @@ const FeaturedTvShows = () => {
 
     useEffect(()=>{
   
-        fetch("/api/shows?featured=true")
+        fetch("http://localhost:5000/shows?featured=true")
         .then((res)=>{
   
           return res.json()

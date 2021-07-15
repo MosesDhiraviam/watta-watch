@@ -75,22 +75,22 @@ const Banner = () => {
     <Carousel.Item interval={1000}>
         <img className = "d-block w-100" src="https://image.tmdb.org/t/p/w300//nVKRspU9SQEs2gNrms8cDKsI4vx.jpg" width = "540" height = "460"
         alt="car-1"/>
-        <Carousel.Caption><h4>The Tomorrow War</h4></Carousel.Caption>
+        <Carousel.Caption>The Tomorrow War</Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
         <img className = "d-block w-100" src="https://image.tmdb.org/t/p/w300//tyZmdMdI3jLs93HDObOZkdq4J7z.jpg" width = "540" height = "460"
         alt="car-1"/>
-        <Carousel.Caption><h4>Fear Street Part One: 1994</h4></Carousel.Caption>
+        <Carousel.Caption>Fear Street Part One: 1994</Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
         <img className = "d-block w-100" src="https://image.tmdb.org/t/p/w300//z2UtGA1WggESspi6KOXeo66lvLx.jpg" width = "540" height = "460"
         alt="car-1"/>
-        <Carousel.Caption><h4>A Quiet Place Part II</h4></Carousel.Caption>
+        <Carousel.Caption>A Quiet Place Part II</Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item interval={1000}>
         <img className = "d-block w-100" src="https://image.tmdb.org/t/p/w300//ok7RdHhVngnwkvKj09tvtOvypG.jpg" width = "540" height = "460"
         alt="car-1"/>
-        <Carousel.Caption><h4>No Sudden Move</h4></Carousel.Caption>
+        <Carousel.Caption>No Sudden Move</Carousel.Caption>
     </Carousel.Item>
 </Carousel>
 
