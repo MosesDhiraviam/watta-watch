@@ -1,0 +1,232 @@
+.loginCreateAccount {
+    background-color: #c559c9;
+    margin-left: 350px;
+    height: 70px;
+    display: flex;
+    margin-top: 20px;
+    width: 800px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    font-family: Verdana;
+  }
+  
+  .loginContainer {
+    padding: 16px;
+    width: 50%;
+    margin: auto;
+    
+    margin-top: 20px;
+    border: solid blueviolet;
+    border-radius: 20px;
+    width: 1000px;
+    padding: 30px;
+  }
+  .loginContainer h1{
+    color: rgb(240, 238, 241);
+}
+  
+  .loginContainer label {
+    font-size: 18px;
+    padding-left: 80px;
+    color: blueviolet;
+  }
+  
+  .loginContainer input {
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    margin-left: 100px;
+    position: sticky;
+    font-size: 16px;
+  }
+  
+  .loginContainer input[type=email] {
+    margin-left: 125px;
+    margin-top: 40px;
+  }
+  
+  .loginContainer button[type=submit] {
+    background-color: #9c77a1;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left: 310px;
+    margin-top: 35px;
+  }
+  
+  .loginContainer p {
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 16px;
+    margin-left: 260px;
+  }
+  
+  .loginContainer button[type=goback] {
+    background-color: #BFBFBF;
+    color: #000000;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-left: 250px;
+    margin-right: 30px;
+  }
+  
+  .loginContainer button[type=cancel] {
+    background-color: #BFBFBF;
+    color: #000000;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .roleradiobutton{
+    padding-left: 25px;
+    font-size: 22px;
+    font-family: Verdana;
+    transform:scale(0.7);
+  }
+
+
+  .registerTitle {
+    background-color: #37733A;
+    padding-top: 10px;
+    width: 220px;
+    display: flex;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-family: Verdana;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  
+  .registerSignIn {
+    background-color: #BFBFBF;
+    margin-left: 350px;
+    height: 70px;
+    display: flex;
+    margin-top: 20px;
+    width: 800px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #000000;
+    border-style: solid;
+    font-family: Verdana;
+  }
+  
+  .registerContainer {
+    width: 100%;
+    margin-left: 250px;
+    margin-top: 25px;
+    border: solid blueviolet;
+    border-radius: 20px;
+    width: 1000px;
+    padding: 30px;
+  }
+  .registerContainer h1{
+      color: rgb(240, 238, 241);
+  }
+  
+  .registerContainer label {
+    font-size: 16px;
+    padding-left: 30px;
+    color: blueviolet;
+  }
+  
+  .registerContainer input {
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    position: sticky;
+    font-size: 16px;
+  }
+  
+  .registerContainer input[type=date] {
+    margin-left: 35px;
+  }
+  
+  .registerContainer input[type=email] {
+    margin-left: 130px;
+  }
+  
+  .registerContainer input[name=psw] {
+    margin-left: 105px;
+  }
+  
+  .registerContainer input[type=checkbox] {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .registerContainer label[type=terms] {
+    margin-left: -20px;
+  }
+  
+  .registerContainer button[type=goback] {
+    background-color: #BFBFBF;
+    color: #000000;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .registerContainer button[type=cancel] {
+    background-color: #BFBFBF;
+    color: #000000;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .registerContainer button[type=submit] {
+    background-color: #9c77a1;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Verdana;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+
+  a{
+      color: #9c77a1;
+  }
+  

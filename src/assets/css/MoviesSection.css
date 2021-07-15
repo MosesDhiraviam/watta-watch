@@ -1,0 +1,27 @@
+#movie-list
+{
+    margin-bottom: 15px;
+}
+
+#movie-list h1
+{
+    margin:16px 0;
+    color: white;
+
+}
+.movie-table
+{
+    display: grid;
+    column-gap: 0.1rem;
+    row-gap: 0.5rem;
+    grid-template-columns: repeat(5,1fr);
+}
+
+
+
+
+
+
+
+
+

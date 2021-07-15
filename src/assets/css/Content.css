@@ -1,0 +1,40 @@
+#content {
+    background-color: #000000;
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+  
+  .content {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 16px;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .content {
+      grid-template-columns: 50% 50%;
+      row-gap: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .content {
+      grid-template-columns: 100%;
+      row-gap: 16px;
+    }
+  }
+  
+  .count-box {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    width: 80%;
+    border: solid #bd62a9;
+    background: black;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.08);
+    color: white;
+  }
