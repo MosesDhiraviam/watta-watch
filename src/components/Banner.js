@@ -23,7 +23,7 @@ const Banner = () => {
     //     return () => clearInterval(interval);
     //   }
 
-      fetch(`http://localhost:5000/banner/${index}`)
+      fetch(`/api/banner/${index}`)
       .then((res)=>{
 
         return res.json()

@@ -41,7 +41,7 @@ const App = () => {
   useEffect(()=>{
 
       //Async operation //POST,PUT OR DELETE
-      fetch("http://localhost:5000/movies")
+      fetch("/api/movies")
       .then((res)=>{
 
         return res.json()

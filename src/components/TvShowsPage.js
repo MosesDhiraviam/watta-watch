@@ -10,7 +10,7 @@ const TvShowsPage = () => {
 
     useEffect(()=>{
   
-        fetch("http://localhost:5000/shows")
+        fetch("/api/shows")
         .then((res)=>{
   
           return res.json()

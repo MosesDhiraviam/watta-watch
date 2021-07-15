@@ -25,7 +25,7 @@ const ShowsDetailsPage = () => {
     const {id} = useParams();
 
     useEffect(()=>{
-    fetch(`http://localhost:5000/shows/${id}`)
+    fetch(`/api/shows/${id}`)
         .then((res)=>{
   
           return res.json()
