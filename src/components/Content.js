@@ -18,7 +18,7 @@ const Content = () => {
 
     useEffect(()=>{
   
-        fetch("http://localhost:5000/offers")
+        fetch("/api/offers")
         .then((res)=>{
   
           return res.json()

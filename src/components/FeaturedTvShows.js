@@ -18,7 +18,7 @@ const FeaturedTvShows = () => {
 
     useEffect(()=>{
   
-        fetch("http://localhost:5000/shows?featured=true")
+        fetch("/api/shows?featured=true")
         .then((res)=>{
   
           return res.json()
