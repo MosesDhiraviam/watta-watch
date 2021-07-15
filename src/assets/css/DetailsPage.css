@@ -12,6 +12,7 @@
   
   .detailed_title {
     font-size: 3rem;
+    margin-left: 10px;
     font-weight: 800;
     padding-bottom: 0.3rem;
     color: rgb(255, 255, 255);
@@ -20,6 +21,7 @@
   .detailed_description {
     width: 45rem;
     font-size: 0.8rem;
+    margin-left: 10px;
     line-height: 1.3rem;
     padding-top: 1rem;
     max-width: 360px;
@@ -71,6 +73,7 @@
   }
   p{
       color: rgb(236, 235, 235);
+      margin-left: 10px;
   }
   strong{
       color: blueviolet;
