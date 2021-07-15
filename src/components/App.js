@@ -24,6 +24,7 @@ import TvShowsPage from "./TvShowsPage"
 import MovieDetailsPage from "./MovieDetailsPage"
 import ShowsDetailsPage from "./ShowsDetailsPage"
 import ContentImage from "../assets/images/content-image.jpeg"
+import ContentImage2 from "../assets/images/content-image2.jpeg"
 import "../assets/css/App.css"
 import {
   BrowserRouter as Router,
@@ -67,6 +68,7 @@ const App = () => {
       <NavBar/>
       <Banner/>
       <FeaturedFlims/>
+      <img src={ContentImage2} className="content-image"/>
       <FeaturedTvShows/>
       <img src={ContentImage} className="content-image"/>
       <Content/>
