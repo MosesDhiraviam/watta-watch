@@ -25,7 +25,7 @@ const MovieDetailsPage = () => {
     const {id} = useParams();
 
     useEffect(()=>{
-    fetch(`/api//movies/${id}`)
+    fetch(`/api/movies/${id}`)
         .then((res)=>{
   
           return res.json()
@@ -54,17 +54,17 @@ const MovieDetailsPage = () => {
                     <button className = "banner__button">Buy for ${movies.buyPrice}</button>
                     <button className = "banner__button">Rent for ${movies.rentPrice}</button>
                 </div>
-          <h1>{movies.title}</h1>
-          <strong> Description: </strong>
+          <h1 className="move-10">{movies.title}</h1>
+          <strong className="move-10"> Description: </strong>
           <p>{movies.description}</p>
-          <div className='type'>
+          <div className="move-10">
             <span className='typeTitle'>
               <strong>Type: </strong>
             </span>
             <p>{movies.type}</p>
-            <p>Year Made:   {movies.year}</p>
-            <p>Ratings:  {movies.rating}</p>
-            <p>Total Ratings: {movies.totalRatings}</p>
+            <p className="move-10">Year Made:   {movies.year}</p>
+            <p className="move-10">Ratings:  {movies.rating}</p>
+            <p className="move-10"> Total Ratings: {movies.totalRatings}</p>
             </div>
           </div>
         </Col>

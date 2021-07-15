@@ -54,17 +54,17 @@ const ShowsDetailsPage = () => {
                     <button className = "banner__button">Buy for ${shows.buyPrice}</button>
                     <button className = "banner__button">Rent for ${shows.rentPrice}</button>
                 </div>
-          <h1>{shows.title}</h1>
-          <strong> Description: </strong>
+          <h1 className="move-10">{shows.title}</h1>
+          <strong className="move-10"> Description: </strong>
           <p>{shows.description}</p>
-          <div className='type'>
+          <div className="move-10">
             <span className='typeTitle'>
               <strong>Type: </strong>
             </span>
             <p>{shows.type}</p>
-            <p>Year Made:   {shows.year}</p>
-            <p>Ratings:  {shows.rating}</p>
-            <p>Total Ratings: {shows.totalRatings}</p>
+            <p className="move-10">Year Made:   {shows.year}</p>
+            <p className="move-10">Ratings:  {shows.rating}</p>
+            <p className="move-10"> Total Ratings: {shows.totalRatings}</p>
             </div>
           </div>
           

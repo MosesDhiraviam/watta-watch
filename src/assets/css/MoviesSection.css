@@ -1,23 +1,25 @@
 #movie-list
 {
     margin-bottom: 15px;
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
 #movie-list h1
 {
     margin:16px 0;
-    color: white;
+    color: rgb(248, 247, 248);
 
 }
 .movie-table
 {
     display: grid;
-    column-gap: 0.1rem;
-    row-gap: 0.5rem;
+    column-gap: 0.2rem;
+    row-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
 }
-
+.container{
+margin-left: 25px;
+}
 
 
 

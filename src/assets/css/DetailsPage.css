@@ -12,7 +12,7 @@
   
   .detailed_title {
     font-size: 3rem;
-    margin-left: 10px;
+    margin-left: 20px;
     font-weight: 800;
     padding-bottom: 0.3rem;
     color: rgb(255, 255, 255);
@@ -21,7 +21,7 @@
   .detailed_description {
     width: 45rem;
     font-size: 0.8rem;
-    margin-left: 10px;
+    margin-left: 20px;
     line-height: 1.3rem;
     padding-top: 1rem;
     max-width: 360px;
@@ -109,4 +109,7 @@
   }
   .detailed-contents{
       background-color: rgba(20, 19, 19, 0.76);
+  }
+  .move-10{
+    margin-left: 20px;
   }
