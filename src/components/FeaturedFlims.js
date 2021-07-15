@@ -18,14 +18,13 @@ const FeaturedFlims = () => {
 
   useEffect(()=>{
 
-    fetch("/api/movies")
+    fetch("/api/movies?featured=true")
       .then((res)=>{
 
         return res.json()
       })
       .then(json=>{    
-        const newMovie= json.filter((jsn)=>{return jsn.featured===true})
-            setMovies(newMovie);
+        setMovies(json)
       })
       .catch((err)=>{
           console.log(`Error ${err}`);
