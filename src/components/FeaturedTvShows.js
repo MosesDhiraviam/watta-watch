@@ -1,5 +1,4 @@
 import React from 'react';
-import Items from "./Items";
 import Card from './Card';
 import "../assets/css/cardholder.css"
 import Carousel from "react-elastic-carousel";
