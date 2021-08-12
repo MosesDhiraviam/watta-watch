@@ -25,7 +25,7 @@ const ShowsDetailsPage = () => {
     const {id} = useParams();
 
     useEffect(()=>{
-    fetch(`https://watta-watch-api.herokuapp.com/shows/details/${id}`)
+    fetch(`https://watta-watch-api.herokuapp.com/shows/${id}`)
         .then((res)=>{
   
           return res.json()
