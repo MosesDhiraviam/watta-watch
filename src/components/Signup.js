@@ -18,6 +18,9 @@ const Signup = () => {
 
         fetch("https://watta-watch-api.herokuapp.com/auth/register",{
             method: "POST",
+            mode: 'cors',
+            cache: 'no-cache',
+            credentials: 'same-origin' ,
             headers:{
                 'Content-Type': 'application/json'
             },
