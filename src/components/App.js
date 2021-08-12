@@ -20,6 +20,8 @@ import Footer from "./Footer"
 import LoginPage from "./Login"
 import SignupPage from "./Signup"
 import MoviesPage from "./MoviesPage"
+import UsersPage from "./userPage"
+import Shows from "./Shows"
 import TvShowsPage from "./TvShowsPage"
 import MovieDetailsPage from "./MovieDetailsPage"
 import ShowsDetailsPage from "./ShowsDetailsPage"
@@ -87,6 +89,16 @@ const App = () => {
             <Route exact path="/shows/:id">
               <NavBar/>
               <ShowsDetailsPage/>
+              <Footer/>
+            </Route>
+            <Route exact path="/users">
+              <NavBar/>
+              <UsersPage/>
+              <Footer/>
+            </Route>
+            <Route exact path="/showsPage">
+              <NavBar/>
+              <Shows/>
               <Footer/>
             </Route>
             </videoContext.Provider>

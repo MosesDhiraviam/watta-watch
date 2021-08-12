@@ -17,6 +17,9 @@ const Navbar = () => {
       function Tvshowssectionredirect() {
         history.push("/tvShowsPage");
       }
+      function allSectionRedirect() {
+        history.push("/showsPage");
+      }
       function homeRedirect() {
         history.push("/");
       }
@@ -27,6 +30,9 @@ const Navbar = () => {
         <img src={Logo} alt="neflix_logo" height="60px" onClick={()=>{
             homeRedirect();
         }}></img>
+        <button className="moviesSection-btn" onClick={()=>{
+                allSectionRedirect();
+            }}>All</button>
         <button className="moviesSection-btn" onClick={()=>{
                 movieSectionRedirect();
             }}>Movies</button>

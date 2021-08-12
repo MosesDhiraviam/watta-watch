@@ -4,13 +4,14 @@ import "../assets/css/MoviesSection.css"
 import { Link } from 'react-router-dom';
 import {useEffect,useContext} from "react";
 import videoContext from "../context/Videocontext";
+import SearchBox from "./SearchBox"
 
-const MoviesPage = () => {
+const Shows = () => {
     const {movies,setMovies} = useContext(videoContext);
 
   useEffect(()=>{
 
-      fetch("https://watta-watch-api.herokuapp.com/shows/movies")
+      fetch("https://watta-watch-api.herokuapp.com/shows/")
       .then((res)=>{
 
         return res.json()
@@ -27,15 +28,30 @@ const MoviesPage = () => {
 
   },[])
 
- 
+  const filterMovies = (input)=>{
+
+    fetch(`https://watta-watch-api.herokuapp.com/shows/search?q=${input}`)
+      .then((res)=>{
+
+        return res.json()
+      })
+      .then(json=>{    
+       
+            setMovies(json);
+      })
+      .catch((err)=>{
+          console.log(`Error ${err}`);
+      })
+}
 
     return (
         <section id="movie-list">
 
         <div className= "container">
 
+          <SearchBox onFilter={filterMovies}/>
 
-            <h1>Movies </h1>
+            <h1>Movies and Series </h1>
 
             <div className="movie-table">
 
@@ -50,4 +66,4 @@ const MoviesPage = () => {
     )
 }
 
-export default MoviesPage
+export default Shows
