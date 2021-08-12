@@ -18,7 +18,7 @@ const FeaturedFlims = () => {
 
   useEffect(()=>{
 
-    fetch("/api/movies?featured=true")
+    fetch("https://watta-watch-api.herokuapp.com/shows/featured?type=movies")
       .then((res)=>{
 
         return res.json()
@@ -42,7 +42,7 @@ const FeaturedFlims = () => {
                 
                 <div className="pop_main">
                 <Carousel  breakPoints={breakPoints} pagination="false" >
-                {movies.map((movie)=>(<Card key={movie.id} id={movie.id}  name={movie.title} imgs={movie.image}  />))}
+                {movies.map((movie)=>(<Card key={movie.id} id={movie.id}  name={movie.title} imgs={movie.poster}  />))}
 
 
 </Carousel>

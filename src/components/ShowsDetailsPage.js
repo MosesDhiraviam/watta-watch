@@ -25,7 +25,7 @@ const ShowsDetailsPage = () => {
     const {id} = useParams();
 
     useEffect(()=>{
-    fetch(`/api/shows/${id}`)
+    fetch(`https://watta-watch-api.herokuapp.com/shows/details/${id}`)
         .then((res)=>{
   
           return res.json()
@@ -50,7 +50,7 @@ const ShowsDetailsPage = () => {
             }}>
           <div className="detailed-contents">
           <div className = "banner__buttons">
-          <img className="movie-image" alt={shows.title} width='85%' src={shows.image} />
+          <img className="movie-image" alt={shows.title} width='85%' src={shows.poster} />
                     <button className = "banner__button">Buy for ${shows.buyPrice}</button>
                     <button className = "banner__button">Rent for ${shows.rentPrice}</button>
                 </div>

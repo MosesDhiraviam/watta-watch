@@ -18,7 +18,7 @@ const FeaturedTvShows = () => {
 
     useEffect(()=>{
   
-        fetch("/api/shows?featured=true")
+        fetch("https://watta-watch-api.herokuapp.com/shows/featured?type=series")
         .then((res)=>{
   
           return res.json()
@@ -42,7 +42,7 @@ const FeaturedTvShows = () => {
                   
                   <div className="pop_main">
                   <Carousel  breakPoints={breakPoints} pagination="false">
-                  {shows.map((show)=>(<Card key={show.id} id={show.id}  name={show.title} imgs={show.image}  />))}
+                  {shows.map((show)=>(<Card key={show.id} id={show.id}  name={show.title} imgs={show.poster}  />))}
   
   
   </Carousel>

@@ -40,23 +40,7 @@ const App = () => {
   const [shows, setShows] = useState([]);
   const [offers, setOffers] = useState([]);
 
-  useEffect(()=>{
-
-      //Async operation //POST,PUT OR DELETE
-      fetch("/api/movies")
-      .then((res)=>{
-
-        return res.json()
-      })
-      .then(json=>{    
-            setMovies(json);
-      })
-      .catch((err)=>{
-          console.log(`Error ${err}`);
-      })
-
-
-  },[])
+  
   return (
     <>
     <div className="main-container">

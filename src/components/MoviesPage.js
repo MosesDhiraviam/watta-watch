@@ -10,7 +10,7 @@ const MoviesPage = () => {
 
   useEffect(()=>{
 
-      fetch("/api/movies")
+      fetch("https://watta-watch-api.herokuapp.com/shows/movies")
       .then((res)=>{
 
         return res.json()
@@ -36,7 +36,7 @@ const MoviesPage = () => {
             <div className="movie-table">
 
             {movies.map((movie)=>( <Link to={`movies/${movie.id}`}>
-                                        <Card key={movie.id} id={movie.id}  name={movie.title} imgs={movie.image}  />
+                                        <Card key={movie.id} id={movie.id}  name={movie.title} imgs={movie.poster}  />
                                     </Link>))}
 
             </div>
