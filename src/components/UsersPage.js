@@ -17,8 +17,7 @@ const UsersPage = () => {
             <label for="first Name">Fisrt Name : {loggedinUsers.firstName}</label><br/>
             <label for="last Name">Last Name : {loggedinUsers.lastName}</label><br/>
             <label for="email">Email : {loggedinUsers.email}</label>
-            {console.log(loggedinUsers)}
-           {loggedinUsers.firstName}
+            
         </div>
     )
 }
