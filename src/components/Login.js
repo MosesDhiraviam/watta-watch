@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 import {useContext} from 'react'
 import {useState, useEffect} from "react"
 import UserContext from "../context/Videocontext"
-import UserPage from "./UserPage"
 const Login = () => {
 
     const [loginUser, setLoginUser] = useState({
