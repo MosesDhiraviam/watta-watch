@@ -5,7 +5,7 @@ import {useContext} from 'react'
 
   
 
-const UserPage = () => {
+const UsersPage = () => {
     
 
     const {loggedinUsers}=  useContext(UserContext);
@@ -23,4 +23,4 @@ const UserPage = () => {
     )
 }
 
-export default UserPage
+export default UsersPage
