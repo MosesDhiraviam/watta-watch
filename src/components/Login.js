@@ -29,7 +29,7 @@ const Login = () => {
             body: JSON.stringify(loginUser)
         }).then(res=>res.json())
         .then(data=>{
-            console.log(data)
+            alert(`Successfully logged in as ${data.firstName} `);
             setLoggedinUsers({
                 firstName:data.firstName,
         lastName:data.lastName,
