@@ -2,8 +2,10 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import "../assets/css/Form.css"
 import { useHistory } from "react-router-dom";
+import {useContext} from 'react'
 import {useState, useEffect} from "react"
-import UserPage from "./userPage"
+import UserContext from "../context/Videocontext"
+import UserPage from "./UserPage"
 const Login = () => {
 
     const [loginUser, setLoginUser] = useState({
@@ -11,11 +13,7 @@ const Login = () => {
         password: null
     });
 
-    const [loggedinUser, setLoggedinUser]= useState({
-        firstName:"",
-        lastName:"",
-        email:""
-    });
+    const {loggedinUsers,setLoggedinUsers}=  useContext(UserContext);
 
     const submitForm=(e)=>{
 
@@ -32,13 +30,13 @@ const Login = () => {
             body: JSON.stringify(loginUser)
         }).then(res=>res.json())
         .then(data=>{
-            
-            setLoggedinUser({
+            console.log(data)
+            setLoggedinUsers({
                 firstName:data.firstName,
         lastName:data.lastName,
         email:data.email
             })
-            alert(`the user ${loggedinUser.firstName} registered successfully`);
+            console.log(loggedinUsers)
         }).catch(err=>{
             console.log(`ERROR : ${err}`);
         })
@@ -69,8 +67,8 @@ const Login = () => {
                 })
             }}/><br/><br/>
 
-                <label for="psw">Password:</label>
-                <input type="password" placeholder="Enter Password" name="password" required value={loginUser.password} onChange={(event)=>{
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter Password" autoComplete="on" name="password" required value={loginUser.password} onChange={(event)=>{
                 setLoginUser({
                     ...loginUser,
                     password:event.target.value
@@ -79,15 +77,12 @@ const Login = () => {
 
 
                 
-<Link to={{
-    pathname: '/users',
-    state: {loggedinUser},
-  }}><button type="submit">LOGIN</button></Link><br></br>
+<button type="submit">LOGIN</button><br></br>
                 
                 <p>
                     <a href="#">Reset Password</a>
                 </p>
-                <Link to="/"><button type="goback">HOME</button></Link>
+                <Link to="/users"><button type="goback">HOME</button></Link>
                 <button type="cancel" onClick={refreshPage}>CLEAR</button>
                 </form>
             </div>

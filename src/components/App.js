@@ -20,7 +20,7 @@ import Footer from "./Footer"
 import LoginPage from "./Login"
 import SignupPage from "./Signup"
 import MoviesPage from "./MoviesPage"
-import UsersPage from "./userPage"
+import UsersPage from "./UserPage"
 import Shows from "./Shows"
 import TvShowsPage from "./TvShowsPage"
 import MovieDetailsPage from "./MovieDetailsPage"
@@ -40,7 +40,11 @@ const App = () => {
 
   const [movies, setMovies] = useState([]);
   const [shows, setShows] = useState([]);
-  const [offers, setOffers] = useState([]);
+  const [loggedinUsers, setLoggedinUsers] = useState({
+    firstName:"",
+    lastName:"",
+    email:""
+});
 
   
   return (
@@ -49,7 +53,7 @@ const App = () => {
     <Router>
       <Switch>
 
-      <videoContext.Provider value={{movies,shows,offers,setMovies,setShows,setOffers}} > 
+      <videoContext.Provider value={{movies,shows,loggedinUsers,setMovies,setShows,setLoggedinUsers}} > 
       <Route exact path="/">
       <NavBar/>
       <Banner/>
@@ -57,7 +61,7 @@ const App = () => {
       <img src={ContentImage2} className="content-image"/>
       <FeaturedTvShows/>
       <img src={ContentImage} className="content-image"/>
-      <Content/>
+      
       <Footer/>
           </Route>
           <Route path="/loginPage">
