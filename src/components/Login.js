@@ -76,11 +76,9 @@ const Login = () => {
 
 
                 
-<button type="submit">LOGIN</button><br></br>
+<button type="submit">LOGIN</button><br></br><br></br>
                 
-                <p>
-                    <a href="#">Reset Password</a>
-                </p>
+                
                 <Link to="/users"><button type="goback">USER DASHBOARD</button></Link>
                 <button type="cancel" onClick={refreshPage}>CLEAR</button>
                 </form>

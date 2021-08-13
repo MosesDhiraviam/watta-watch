@@ -76,11 +76,11 @@
     color: #000000;
     cursor: pointer;
     font-family: Verdana;
-    height: 40px;
-    width: 120px;
+    height: 50px;
+    width: 200px;
     font-size: 16px;
     border-radius: 8px;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 30px;
   }
   
@@ -89,11 +89,12 @@
     color: #000000;
     cursor: pointer;
     font-family: Verdana;
-    height: 40px;
-    width: 120px;
+    height: 50px;
+    width: 200px;
     font-size: 16px;
     border-radius: 8px;
-    margin-top: 20px;
+   
+    
   }
   
   .roleradiobutton{
@@ -172,7 +173,7 @@
   }
   
   .registerContainer input[type=email] {
-    margin-left: 130px;
+    margin-left: 80px;
   }
   
   .registerContainer input[name=psw] {
